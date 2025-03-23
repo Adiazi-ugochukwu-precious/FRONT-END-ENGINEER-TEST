@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alpharithm Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="menu-toggle" id="menuToggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <img src="assets/Content.png" alt="Logo" class="logo-img" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Models</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Custom Models</a></li>
+      </ul>
+      <div class="navbar-right">
+        <a href="#" class="login-link"><button>Login</button></a>
+        <button class="btn get-started-btn">Get Started Now</button>
+      </div>
+    </nav>
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <ul class="mobile-nav-links">
+        <li><a href="#">Models</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Custom Models</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <p class="hero-subtitle">Leverage on Automation</p>
+    <h1 class="hero-title">AI Models for <br />Business Solutions</h1>
+    <p class="hero-description">
+      Leverage the power of AI to automate, analyze, and optimize your workflows.
+      Our specialized models are designed to fit different business needs.
+    </p>
+    <button class="hero-cta">Get Started Now</button>
+  </section>
+
+  <!-- COMPANY LOGOS (INFINITE SCROLL) -->
+  <section class="company-logos">
+    <p>Join 4,000+ companies already growing</p>
+    <div class="logo-carousel">
+      <div class="logo-slide">
+        <img src="assets/logoipsum-360.svg"  />
+        <img src="assets/logo.png"  />
+        <img src="assets/logo2.png"  />
+        <img src="assets/logo3.png" />
+        <img src="assets/logoipsum-364.svg"  />
+        <!-- Duplicate for seamless scroll -->
+        <img src="assets/logoipsum-360.svg" />
+        <img src="assets/logo.png" />
+        <img src="assets/logo2.png"  />
+        <img src="assets/logo3.png" />
+        <img src="assets/logoipsum-364.svg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- AI MODELS TABBED SECTION (Full-Width Carousel) -->
+  <section class="ai-models">
+    <h2>AI Models tailored for your business needs</h2>
+    <p>Leverage the power of AI to automate, analyze, and optimize your workflows. Our <br>specialized models are designed to fit different business needs</p>
+    
+    <div class="tab-buttons-container">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="market">Market Prediction</button>
+        <button class="tab-button" data-tab="finance">Finance</button>
+        <button class="tab-button" data-tab="analytics">Analytics</button>
+        <button class="tab-button" data-tab="content">Content Generation</button>
+        <button class="tab-button" data-tab="customer">Customer Support</button>
+      </div>
+    </div>
+    
+    <div class="tab-contents">
+      <div class="card-carousel" id="cardCarousel">
+        <div class="card-slide">
+          <div class="ai-card active" data-category="market">
+            <div class="card-content">
+              <p>Market Prediction</p>
+              <h3>Use AI insights for<br>smater buisness<br>descisions and stay<br>competitive.</h3>
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+            <img src="assets/stocks.jpg" alt="Market Prediction" />
+          </div>
+          <div class="ai-card" data-category="finance">
+            <div class="card-content">
+              <p>Finance</p>
+              <h3>Our AI models<br>analyze financial<br>data for confident<br>investments.</h3>
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+            <img src="assets/calc.jpg" alt="Finance" />
+          </div>
+          <div class="ai-card" data-category="analytics">
+            <div class="card-content">
+             <p>Data Analytics</p>
+              <h3>Transform data into<br>insights with AI<br>analytics that<br>enhance descisions.</h3>
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+            <img src="assets/comp.jpg" alt="Analytics" />
+          </div>
+          <div class="ai-card" data-category="content">
+            <div class="card-content">
+              <p>Content Generation</p>
+             <h3>Create quality<br>content easily with<br>AI that knows your<br>brand and audience.</h3>
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+            <img src="assets/book.jpg" alt="Content Generation" />
+          </div>
+          <div class="ai-card" data-category="customer">
+            <div class="card-content">
+              <p>Customer Support</p>
+              <h3>Use AI chatbots for<br>instant, personalized<br>customer support.</h3>
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+            <img src="assets/customer.jpg" alt="Customer Support" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Alpharithm</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
